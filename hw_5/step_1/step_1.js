@@ -31,9 +31,7 @@ const chess = {
 
   isCellIsBlack(rowNum, colNum) {
 
-    let rows = rowNum % 2;
-    let cols = colNum % 2;
-    return rows, cols;
+   return (rowNum + colNum) % 2 === 0;
   },
 };
 
