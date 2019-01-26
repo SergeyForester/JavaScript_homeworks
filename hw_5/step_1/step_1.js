@@ -17,7 +17,9 @@ const chess = {
         if (row === 0 && cols[col] !== 0) {
           td.innerHTML = cols[col];
         } 
-
+	if (row === 9 && cols[col] !== 0) {
+          td.innerHTML = cols[col];
+        } 
 
         if (this.isCellIsBlack(row, col)) {
           td.style.backgroundColor = 'grey';
