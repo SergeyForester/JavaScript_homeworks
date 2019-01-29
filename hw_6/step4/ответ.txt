@@ -1,0 +1,10 @@
+Я убрал стрелочные функции и заменил их на 
+closeImageElement.addEventListener('click', () => this.close());
+closeImageElement.addEventListener('click',  this.close());
+
+И получаю ошибку
+Uncaught TypeError: Cannot read property 'remove' of null
+    at Object.close (step4.js:116)
+и еще ряд других ошибок
+
+Думаю что тут ещё возникает проблемма с this
